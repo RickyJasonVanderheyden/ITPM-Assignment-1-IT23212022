@@ -251,10 +251,7 @@ test.describe('IT3040 Assignment 1 - Singlish Converter Tests', () => {
 
   // -----------------------------------------------------------------------
   // 3. UI TEST SCENARIO
-  // -----------------------------------------------------------------------
-  // -----------------------------------------------------------------------
-  // -----------------------------------------------------------------------
-  // 4. POSITIVE UI TEST (Real-time Update)
+  // POSITIVE UI TEST (Real-time Update)
   // -----------------------------------------------------------------------
   test('Pos_UI_0001: Verify Real-Time Conversion', async ({ page }) => {
     const inputLocator = page.getByRole('textbox', { name: 'Input Your Singlish Text Here.' });
@@ -265,7 +262,7 @@ test.describe('IT3040 Assignment 1 - Singlish Converter Tests', () => {
     await inputLocator.clear();
 
     // 2. Type "oya kohedha" slowly (100ms delay between keys) to simulate a real user
-    await inputLocator.pressSequentially('oya kohedha yanne?', { delay: 100 });
+    await inputLocator.pressSequentially('oyaa kohedha yanne?', { delay: 100 });
     
     // 3. Wait a split second for the final character to process
     await page.waitForTimeout(500);
