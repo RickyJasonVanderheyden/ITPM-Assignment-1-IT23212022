@@ -39,7 +39,7 @@ Follow these steps to set up the testing environment.
     ```
 
 2.  **Open the Project**
-    * Unzip `IT23212022_Assignment1`.
+    * Unzip `IT23212022`.
     * Open the folder in **VS Code**.
 
 3.  **Install Project Dependencies**
